@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+
+    <section class="w-75 m-auto py-3">
+        <h1 class="mb-5">
+            Bookmarker
+        </h1>
+        <hr class="mb-5">
+        <div class="formDiv px-5 py-4 text-center mb-5">
+            <h3 class="mb-3">
+                Bookmark your favorite sites
+            </h3>
+            <h6 class="mb-3">
+                Site Name
+            </h6>
+            <input type="text" class="form-control mb-3" id="bmarkInput" placeholder="Bookmark Name">
+            <h6 class="mb-3">
+                Site URL
+            </h6>
+            <input type="text" class="form-control mb-3" id="urlInput" placeholder="Website Url">
+            <button class="btn btn-primary" onclick="addBookmark()">
+                submit
+            </button>
+
+        </div>
+        <div class="tableDiv mb-5">
+            <table class="w-100 p-5">
+                <tbody id="tbody" class="p-5">
+
+                </tbody>
+            </table>
+        </div>
+
+        <input type="text" class="form-control mt-3 mb-5" onkeyup="searchIn(this.value)" id="searchInput"
+            placeholder="Search by Bookmark Name">
+
+
+
+        <hr>
+        <p>Muhammad Ali © 2022 Bookmarker Inc.</p>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+
+</body>
+
+</html>
